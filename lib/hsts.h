@@ -27,6 +27,10 @@
 #include <curl/curl.h>
 #include "llist.h"
 
+#ifdef DEBUGBUILD
+extern time_t deltatime;
+#endif
+
 struct stsentry {
   struct Curl_llist_element node;
   const char *host;

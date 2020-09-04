@@ -104,8 +104,6 @@ static const struct testit headers[] = {
   { NULL, NULL, NULL, 0 }
 };
 
-extern time_t deltatime; /* adjusts the returned timed */
-
 static void showsts(struct stsentry *e, const char *chost)
 {
   if(!e)
